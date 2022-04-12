@@ -79,6 +79,8 @@ namespace VisualBasic.Transpiler
 
             Console.WriteLine("=== Process of Transpilation completed ===");
             Console.WriteLine($"Time elapsed {sw.Elapsed}");
+
+      Console.ReadLine();
         }
 
         private static void ParseFile(string basFile, ref List<Error> errors)
@@ -117,6 +119,7 @@ namespace VisualBasic.Transpiler
 
         private static void CompileCode(string projectName)
         {
+            return;
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("==========================");
             Console.WriteLine("== Starting compilation ==");
